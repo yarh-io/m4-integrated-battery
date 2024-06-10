@@ -1,0 +1,20 @@
+[Unit]
+Description=BatteryUpdate
+DefaultDependencies=no
+
+[Service]
+Type=simple
+#KillSignal=SIGINT
+#TimeoutStopSec=8
+#Restart=on-failure
+Restart=always
+RestartSec=1
+
+### Change the paths below to match yours
+WorkingDirectory=/home/pi/bin/m4-integrated-battery
+ExecStart=/home/pi/bin/m4-integrated-battery/battery_update_linux
+###
+
+[Install]
+WantedBy=sysinit.target
+

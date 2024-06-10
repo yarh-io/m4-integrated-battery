@@ -30,3 +30,16 @@
 *.exe
 *.out
 *.app
+
+# This project
+*.cmd 
+*.ko 
+*.o 
+.Module.* 
+.modules.* 
+Module.* 
+modules.order 
+*.mod* 
+.integrated_battery.*
+battery_update_linux
+
